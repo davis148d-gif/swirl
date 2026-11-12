@@ -1,0 +1,169 @@
+/* I picked dark blue and bright green to give the site a coding feel. */
+:root {
+  --dark-blue: #10243a;
+  --blue: #176b87;
+  --green: #b7f171;
+  --light-blue: #eaf8ff;
+  --text: #203443;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #e2f5ff, #ffffff 60%);
+  color: var(--text);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 22px 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  margin: 5px 10px;
+  padding: 6px 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--blue);
+  color: var(--green);
+  transform: translateY(-2px);
+}
+
+main {
+  width: min(900px, 92%);
+  margin: 30px auto;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+.welcome,
+.sound-card,
+.list-card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px #10243a18;
+}
+
+h2 {
+  color: var(--dark-blue);
+  margin-top: 0;
+}
+
+.intro-paragraph {
+  background-color: var(--light-blue);
+  padding: 12px;
+  border-left: 5px solid var(--blue);
+}
+
+.fun-paragraph {
+  color: #355a12;
+  font-size: 1.08rem;
+}
+
+.important-paragraph {
+  font-style: italic;
+  border-bottom: 2px dotted var(--blue);
+  padding-bottom: 12px;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--blue);
+  color: white;
+  padding: 11px 18px;
+  margin-top: 10px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: var(--dark-blue);
+  color: var(--green);
+  transform: scale(1.04);
+}
+
+audio {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px;
+  background-color: var(--light-blue);
+  border: 2px solid #a7deed;
+  border-radius: 12px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+.language-list {
+  background-color: var(--light-blue);
+  padding: 18px 18px 18px 42px;
+  border-radius: 12px;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 36px;
+}
+
+footer p {
+  margin: 6px;
+}
+
+footer a {
+  color: var(--green);
+}
+
+footer a:hover {
+  color: white;
+}
+
+.error-card {
+  text-align: center;
+}
+
+.error-number {
+  color: var(--blue);
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 8px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .welcome,
+  .sound-card,
+  .list-card {
+    padding: 18px;
+  }
+}
